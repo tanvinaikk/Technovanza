@@ -1,0 +1,8 @@
+cs50
+Flask
+Flask-Session
+requests
+werkzeug.security
+werkzeug.exceptions
+pyttsx3
+speech_recognition # https://pypi.org/project/SpeechRecognition/
