@@ -47,7 +47,9 @@ def after_request(response):
 @login_required
 def index():
     """Continuation of homepage maybe"""
-    return apology("TODO")
+    if request.method == "GET":
+        return render_template("index.html")
+    
 
 
 @app.route("/login", methods=["GET", "POST"])
