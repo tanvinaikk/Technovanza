@@ -1,3 +1,15 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+{{super()}}
+    <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='index.css')}}">
+{% endblock %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
 <!-- Homepage goes here -->
 <body>
 <div class="container">
@@ -89,3 +101,5 @@
     </div>
 </div>
 </body>
+
+{% endblock %}
