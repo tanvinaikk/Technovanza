@@ -148,6 +148,8 @@ def register():
 @login_required
 def emotions():
     """Recognize and practice emotions"""
+        if request.method == "GET":
+        return render_template("index..html")
     return apology("TODO")
 
 
